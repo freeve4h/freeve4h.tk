@@ -1,0 +1,75 @@
+<!--i hate html-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-J66L94311B"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-J66L94311B');
+        </script>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7493853057953579"
+        crossorigin="anonymous"></script>
+        <script src="./jquery-3.6.1.js"></script>
+        <title>Freeve4h's website</title>
+        <link rel="icon" type="images/x-icon" href="./images/favicon.png">
+        <link rel="stylesheet" href="head.css">
+        <script>console.log("testing testing");</script>
+    </head>
+    <body>
+        <div class="mainDiv">
+            <h1 id="halloweenshow">HAPPY HALLOWEEN</h1>
+            <h1 id="xmasshow">MERRY CHRISTMAS</h1>
+            <h1 id="thankshow">HAPPY THANKSGIVING</h1>
+            <h1 id="newyear">HAPPY NEW YEAR!!!!!!!!!!!!!!!!!!!!!!!!!!!</h1>
+            <script src="./checkdate.js"></script>
+            <script>
+                if (checkHalloween() == false) {
+                    $("#halloweenshow").hide();
+                }
+                if (checkChristmas() == false) {
+                    $("#xmasshow").hide();
+                }
+                if (checkThanksgiving() == false) {
+                    $("#thankshow").hide();
+                }
+                if (checkNewyear() == false) {
+                    $("#newyear").hide();
+                }
+            </script>
+            <h1>WELCOME TO MY WEBSITE!!!</h1>
+            <p>where your dreams come true*</p>
+            <p></p>
+            <h2>ABOUT ME</h2>
+            <p>I am a programmer who knows Lua, Python, C#, HTML, CSS, and Javascript. I also make games, my itch.io is at this <code><a href="https://freeve4h.itch.io">link</a></code>. you can find more links <code><a href="links.html">here</a></code>.<br>as you can see, i made this website.</p>
+            <div class="tipDiv">
+                <h2>TIP</h2>
+                <p>on the bottom of each page you will see links to a different part of the site</p>
+            </div>
+        </div>
+        <p style="color: #111111">*not really</p>
+        <pre></pre>
+        <div class="linksDiv">
+            <div class="centerText">
+                <p><code><a href="home.html">home</a></code></p>
+                <p><code><a href="links.html">links</a></code></p>
+                <p><code><a href="downloads/downloads.html">downloads</a></code></p>
+                <button onclick="$('#Games').toggle(); $('#Games2').toggle();">MY GAMES</button>
+                <p id="Games"><code><a href="getting-to-the-goal.html">getting to the goal</a></code></p>
+                <p id="Games2"><code><a href="beyond-the-rize.html">beyond the rize</a></code></p>
+                <pre></pre>
+                <button onclick="$('#Other').toggle(); $('#Other2').toggle();">OTHER</button>
+                <p id="Other"><code><a href="games/gamescheck.html">GAMES</a></code></p>
+                <p id="Other2"><code><a href="tutorials/tutorials.html">TUTORIALS</a></code></p>
+                <script>
+                    $("#Games").hide();
+                    $("#Games2").hide();
+                    $("#Other").hide();
+                    $("#Other2").hide();
+                </script>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-J66L94311B"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-J66L94311B');
+        </script>
+        <script src="../jquery-3.6.1.js"></script>
+        <script>
+            function buttonclicked() {
+                let answer = prompt("what is 1 + 1");
+                if (answer == "2") {
+                    let answer2 = prompt("who created this website? (don\'t use uppercase)");
+                    if (answer2 == "freeve4h") {
+                        alert("correct!");
+                        $("#gameshide").fadeIn();
+                    } else {
+                        alert("incorrect");
+                    }
+                } else {
+                    alert("incorrect");
+                }
+            }
+        </script>
+        <title>Freeve4h's website</title>
+        <link rel="icon" type="images/x-icon" href="../images/favicon.png">
+        <link rel="stylesheet" href="../head.css">
+    </head>
+    <body>
+        <div class="mainDiv">
+            <div class="centerText">
+                <script>$("#gameshide").hide();</script>
+                <button onclick="buttonclicked()">press this to confirm</button>
+                <p id="gameshide"><a href="./games.html">click here to go to games</a></p>
+                <script>$("#gameshide").hide();</script>
+            </div>
+        </div>
+    </body>
+</html>
