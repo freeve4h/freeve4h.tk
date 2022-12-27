@@ -1,0 +1,47 @@
+body {
+    background-color: white;
+}
+code {
+    border: 1px solid black;
+    background-color: gray;
+    color: red;
+}
+button {
+    background-color: #d3d3d3;
+    border: 2px solid black;
+}
+.mainDiv {
+    border: 5px solid #d3d3d3;
+    background-color: white;
+    text-align: left;
+    margin: auto;
+}
+.linksDiv {
+    border: 5px solid #d3d3d3;
+    background-color: white;
+    text-align: left;
+}
+.spaceDiv {
+    border: 5px solid white;
+    background-color: white;
+    text-align: left;
+}
+.BLUE {
+    color: blue;
+}
+.RED {
+    color: red;
+}
+.tripleSize {
+    width: 3%;
+    height: 3%;
+}
+.centerText {
+    text-align: center;
+}
+.outline {
+    background-color: white;
+    border: 1px solid black;
+    width: 15%;
+    height: auto;
+}
