@@ -1,3 +1,4 @@
+//checks if holiday
 function checkHalloween() {
     let today = new Date().toISOString().slice(0, 10);
     return (today.substring(5) == "10-31")
@@ -18,11 +19,26 @@ function checkNewyear() {
     return (today.substring(5) == "1-1");
 }
 
-function checkSysAdminDay() {
-    // i am an idiot, but i doubt that the site will last that long
-    let dates = ["2023-7-28", "2024-7-26", "2025-7-25", "2026-7-31", "2027-7-30", "2028-7-28"]
+function checkNewyeareve() {
     let today = new Date().toISOString().slice(0, 10);
-    return dates.includes(today)
+    return (today.substring(5) == "12-31");
+}
+
+function checkSysAdminDay() {
+    let ifday = false;
+    for (let i = 31; i > 24; i--) {
+        let today = new Date().toISOString().slice(8, 10);
+        if (today == i) {
+            today = new Date().toISOString().slice(5, 7);
+            if (today == "07") {
+                today = new Date();
+                if (today.getDay() == 5) {
+                    ifday = true;
+                }
+            }
+        }
+    }
+    return ifday;
 }
 
 //test everything
@@ -32,8 +48,10 @@ function toggleall() {
     $("#thankshow").toggle();
     $("#newyear").toggle();
     $("#sysadmin").toggle();
+    $("#newyeareve").toggle();
 }
 
+//hides everything
 if (checkHalloween() == false) {
     $("#halloweenshow").hide();
 }
@@ -48,4 +66,7 @@ if (checkNewyear() == false) {
 }
 if (checkSysAdminDay() == false) {
     $("#sysadmin").hide();
+}
+if (checkNewyeareve() == false) {
+    $("#newyeareve").hide();
 }
