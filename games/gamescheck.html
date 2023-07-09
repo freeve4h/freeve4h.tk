@@ -11,22 +11,6 @@
             gtag('config', 'G-J66L94311B');
         </script>
         <script src="../jquery-3.6.1.js"></script>
-        <script>
-            function buttonclicked() {
-                let answer = prompt("what is 1 + 1");
-                if (answer == "2") {
-                    let answer2 = prompt("type in the domain of this website");
-                    if (answer2 == "freeve4h.tk") {
-                        alert("correct!");
-                        $("#gameshide").fadeIn();
-                    } else {
-                        alert("incorrect");
-                    }
-                } else {
-                    alert("incorrect");
-                }
-            }
-        </script>
         <title>Freeve4h's website</title>
         <link rel="icon" type="images/x-icon" href="../images/favicon.png">
         <link rel="stylesheet" href="../head.css">
@@ -35,10 +19,10 @@
         <div class="mainDiv">
             <div class="centerText">
                 <script>$("#gameshide").hide();</script>
-                <button onclick="buttonclicked()">press this to confirm</button>
-                <p id="gameshide"><a href="./games.html">click here to go to games</a></p>
+                <!--<button onclick="buttonclicked()">press this to confirm</button>-->
+                <p id="gameshide"><a href="./games.html"><code>click here to go to games</code></a></p>
                 <p><a href="../home.html">home</a></p>
-                <script>$("#gameshide").hide();</script>
+                <script>$("#gameshide").show();</script>
             </div>
         </div>
     </body>
